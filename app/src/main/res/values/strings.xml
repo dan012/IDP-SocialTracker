@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Social Tracker</string>
+
+    <!-- FACEBOOK LOGIN STRINGS -->
+    <string name="facebook_app_id">218136872254869</string>
+    <string name="fb_login_protocol_scheme">fb218136872254869</string>
+
+    <string name="text_hello">Hello,</string>
+    <string name="text_username">[nume utilizator]</string>
+
+    <!-- Accessibility -->
+    <string name="drawer_open">Navigation drawer open</string>
+    <string name="drawer_close">Navigation drawer close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

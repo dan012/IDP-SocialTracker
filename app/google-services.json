@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307725422829",
+    "firebase_url": "https://idp-social-tracker.firebaseio.com",
+    "project_id": "idp-social-tracker",
+    "storage_bucket": "idp-social-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307725422829:android:07917825555e4075",
+        "android_client_info": {
+          "package_name": "cs.idp.dvornicu.socialtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307725422829-iid98ruuvetr0hur26d25hqs0gsccf04.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cs.idp.dvornicu.socialtracker",
+            "certificate_hash": "267795c80cdedd84e24e983983d71ac127047df4"
+          }
+        },
+        {
+          "client_id": "307725422829-r04hb2o703u304of89qmknivq0ts7f92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmI50rjHsiZ1aZ8bXq1-8QECZIDmciiAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307725422829-r04hb2o703u304of89qmknivq0ts7f92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
