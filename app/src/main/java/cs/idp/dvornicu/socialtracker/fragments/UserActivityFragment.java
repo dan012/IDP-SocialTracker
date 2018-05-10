@@ -33,7 +33,7 @@ import java.util.List;
 import cs.idp.dvornicu.socialtracker.R;
 import cs.idp.dvornicu.socialtracker.UserActivity;
 import cs.idp.dvornicu.socialtracker.services.LocationService;
-import cs.idp.dvornicu.socialtracker.utils.DbEntry;
+import cs.idp.dvornicu.socialtracker.utils.DbLocationEntry;
 import cs.idp.dvornicu.socialtracker.utils.StorageManager;
 import cs.idp.dvornicu.socialtracker.utils.Util;
 
@@ -105,7 +105,7 @@ public class UserActivityFragment extends Fragment {
         childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                DbEntry entry = dataSnapshot.getValue(DbEntry.class);
+                DbLocationEntry entry = dataSnapshot.getValue(DbLocationEntry.class);
 
                 if(!Profile.getCurrentProfile().getId().equals(entry.userId)) {
                     Location friendLocation = new Location("");
@@ -123,7 +123,7 @@ public class UserActivityFragment extends Fragment {
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                DbEntry entry = dataSnapshot.getValue(DbEntry.class);
+                DbLocationEntry entry = dataSnapshot.getValue(DbLocationEntry.class);
 
                 if(!Profile.getCurrentProfile().getId().equals(entry.userId)) {
                     Location friendLocation = new Location("");

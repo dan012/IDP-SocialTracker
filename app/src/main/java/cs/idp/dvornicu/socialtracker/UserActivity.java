@@ -40,7 +40,7 @@ import cs.idp.dvornicu.socialtracker.fragments.UserActivityFragment;
 import cs.idp.dvornicu.socialtracker.fragments.UserChatFragment;
 import cs.idp.dvornicu.socialtracker.fragments.UserInfoFragment;
 import cs.idp.dvornicu.socialtracker.services.LocationService;
-import cs.idp.dvornicu.socialtracker.utils.DbEntry;
+import cs.idp.dvornicu.socialtracker.utils.DbLocationEntry;
 import cs.idp.dvornicu.socialtracker.utils.Util;
 
 public class UserActivity extends AppCompatActivity {
@@ -220,7 +220,7 @@ public class UserActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             Bundle extras = intent.getExtras();
-            DbEntry entry = new DbEntry(
+            DbLocationEntry entry = new DbLocationEntry(
                                 Profile.getCurrentProfile().getId(),
                                 extras.getDouble("LOC_LNG", 0.0),
                                 extras.getDouble("LOC_LAT", 0.0),

@@ -28,9 +28,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import cs.idp.dvornicu.socialtracker.R;
 import cs.idp.dvornicu.socialtracker.services.LocationService;
 import cs.idp.dvornicu.socialtracker.utils.StorageManager;

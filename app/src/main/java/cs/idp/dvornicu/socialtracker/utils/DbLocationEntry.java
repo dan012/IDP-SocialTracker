@@ -3,17 +3,17 @@ package cs.idp.dvornicu.socialtracker.utils;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
-public class DbEntry {
+public class DbLocationEntry {
 
     public String userId;
     public double longitude, latitude;
     public long time;
 
-    public DbEntry() {
+    public DbLocationEntry() {
 
     }
 
-    public DbEntry(String user, double longitude, double latitude, long time) {
+    public DbLocationEntry(String user, double longitude, double latitude, long time) {
         this.userId = user;
         this.longitude = longitude;
         this.latitude = latitude;
