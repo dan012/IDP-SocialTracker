@@ -61,7 +61,6 @@ public class UserChatFragment extends Fragment {
 
                 try {
                     friend = UserActivity.facebookFriends.getJSONObject(i);
-                    Toast.makeText(getContext(), "My text is " + friend.getString("name"), Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(getActivity(), ChatActivity.class);
                     intent.putExtra("user_name", friend.getString("name"));

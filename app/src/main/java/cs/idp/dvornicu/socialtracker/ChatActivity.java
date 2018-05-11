@@ -62,22 +62,6 @@ public class ChatActivity extends AppCompatActivity {
             return;
         }
 
-        /*
-        String[] chatEntry = new String[3];
-        chatEntry[0] = user_name;
-        chatEntry[1] = "Mesaj demo";
-        chatEntry[2] = "2";
-
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        chatMessages.add(chatEntry);
-        */
-
         listAdapter = new ArrayAdapter<String[]>(this, R.layout.list_feed_element, R.id.firstLine, chatMessages) {
 
             @NonNull
@@ -214,6 +198,7 @@ public class ChatActivity extends AppCompatActivity {
 
             }
         };
+        Util.getDb().getReference("chat").child(user_id).removeEventListener(childEventListener);
         Util.getDb().getReference("chat").child(user_id).addChildEventListener(childEventListener);
 
     }
@@ -221,5 +206,8 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+
+        if(childEventListener != null)
+            Util.getDb().getReference("chat").child(user_id).removeEventListener(childEventListener);
     }
 }
